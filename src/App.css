@@ -1,0 +1,49 @@
+/* LocationSelector.css */
+
+.location-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.location-selector .react-select__control {
+  margin-bottom: 10px;
+}
+
+.geosuggest {
+  position: relative;
+}
+
+.geosuggest__input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.geosuggest__suggests {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.geosuggest__item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.geosuggest__item:hover {
+  background: #f0f0f0;
+}
+
+.geosuggest__item--active {
+  background: #e0e0e0;
+}
